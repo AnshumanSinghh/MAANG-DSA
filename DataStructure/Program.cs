@@ -1,5 +1,6 @@
 ﻿using DataStructure.Assignment1;
 using DataStructure.DivideAndConquer;
+using DataStructure.Sorting_Algos.BinaryHeap;
 using System;
 using System.Collections.Generic;
 
@@ -95,6 +96,16 @@ namespace DataStructure
             //FindMinAndMaxInArray findMinAndMax = new FindMinAndMaxInArray();
             //var answer = findMinAndMax.FindMinAndMax(arr3, 0, arr3.Count - 1);
             //Console.WriteLine(answer);
+
+            // Binary Heap:
+            // insertion
+            Heapq heapq = new Heapq();
+            heapq.HeapPush(50);
+            heapq.HeapPush(55);
+            heapq.HeapPush(53);
+            heapq.HeapPush(52);
+            heapq.HeapPush(54);
+            heapq.Peek();
 
             Console.ReadKey();
         }
