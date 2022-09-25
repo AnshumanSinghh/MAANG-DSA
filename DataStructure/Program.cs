@@ -72,7 +72,7 @@ namespace DataStructure
             //var x = 837465734;
             //var x1 = 34874;
             //var x2 = 866578;
-            ////Console.WriteLine(computeSquareRoot.SquareRoot(2, (x / 2) - 1, x));
+            //Console.WriteLine(computeSquareRoot.SquareRoot(2, x / 3, x));
 
             //PerfectSquare perfectSquare = new PerfectSquare();
             //Console.WriteLine(perfectSquare.CheckIfPerfectSquare(2, (x / 2), x));  // if we take x/2 -1. Then for x = 4 it will fail.
@@ -91,10 +91,10 @@ namespace DataStructure
             //Console.ReadKey();
 
             // Divide and Conquer - Find min and Max
-            var arr3 = new List<int> { -23, 40, 55, 61, 72, 81, 89, 134, 143, 150, 170, 190 };
-            FindMinAndMaxInArray findMinAndMax = new FindMinAndMaxInArray();
-            var answer = findMinAndMax.FindMinAndMax(arr3, 0, arr3.Count - 1);
-            Console.WriteLine(answer);
+            //var arr3 = new List<int> { -23, 40, 55, 61, 72, 81, 89, 134, 143, 150, 170, 190 };
+            //FindMinAndMaxInArray findMinAndMax = new FindMinAndMaxInArray();
+            //var answer = findMinAndMax.FindMinAndMax(arr3, 0, arr3.Count - 1);
+            //Console.WriteLine(answer);
 
             Console.ReadKey();
         }
