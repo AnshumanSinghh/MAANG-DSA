@@ -26,6 +26,21 @@ namespace DataStructure.Sorting_Algos.BinaryHeap
             MinHeapify(index);
         }
 
+        public void HeapPop()
+        {
+            if (size == 0)
+            {
+                Console.WriteLine("Nothing to delete");
+                return;
+            }
+
+            Swap(1, size);  // Swap first element with last
+            size--;
+
+            //RearrangeForValidMaxHeap();
+            RearrangeForValidMinHeap();
+        }
+
         public void Peek()
         {
             for (int i = 1; i <= size; i++)
@@ -68,6 +83,56 @@ namespace DataStructure.Sorting_Algos.BinaryHeap
                 {
                     Swap(parent, index);
                     index = parent;
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
+
+        private void RearrangeForValidMaxHeap()
+        {
+            int i = 1;
+            while (size > i)
+            {
+                var leftChildIndex = 2 * i;
+                var rightChildIndex = (2 * i) + 1;
+
+                if (leftChildIndex < size && arr[i] < arr[leftChildIndex])
+                {
+                    Swap(i, leftChildIndex);
+                    i = leftChildIndex;
+                }
+                else if (rightChildIndex < size && arr[i] < arr[rightChildIndex])
+                {
+                    Swap(i, leftChildIndex);
+                    i = rightChildIndex;
+                }
+                else
+                {
+                    return;
+                } 
+            }
+        }
+
+        private void RearrangeForValidMinHeap()
+        {
+            int i = 1;
+            while (size > i)
+            {
+                var leftChildIndex = 2 * i;
+                var rightChildIndex = (2 * i) + 1;
+
+                if (leftChildIndex < size && arr[i] > arr[leftChildIndex])
+                {
+                    Swap(i, leftChildIndex);
+                    i = leftChildIndex;
+                }
+                else if (rightChildIndex < size && arr[i] > arr[rightChildIndex])
+                {
+                    Swap(i, leftChildIndex);
+                    i = rightChildIndex;
                 }
                 else
                 {

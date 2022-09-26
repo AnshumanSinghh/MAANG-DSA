@@ -106,7 +106,8 @@ namespace DataStructure
             heapq.HeapPush(52);
             heapq.HeapPush(54);
             heapq.Peek();
-
+            heapq.HeapPop();
+            heapq.Peek();
             Console.ReadKey();
         }
     }
