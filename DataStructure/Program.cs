@@ -1,5 +1,6 @@
 ﻿using DataStructure.Assignment1;
 using DataStructure.DivideAndConquer;
+using DataStructure.Sorting_Algos;
 using DataStructure.Sorting_Algos.BinaryHeap;
 using System;
 using System.Collections.Generic;
@@ -100,17 +101,26 @@ namespace DataStructure
 
             // Binary Heap:
             // insertion
-            Heapq heapq = new Heapq();
-            heapq.HeapPush(50);
-            heapq.HeapPush(55);
-            heapq.HeapPush(53);
-            heapq.HeapPush(52);
-            heapq.HeapPush(54);
-            heapq.Peek();
+            //Heapq heapq = new Heapq();
+            //heapq.HeapPush(50);
+            //heapq.HeapPush(55);
+            //heapq.HeapPush(53);
+            //heapq.HeapPush(52);
+            //heapq.HeapPush(54);
+            //heapq.Peek();
 
             // Binary Heap deletion
-            heapq.HeapPop();
-            heapq.Peek();
+            //heapq.HeapPop();
+            //heapq.Peek();
+
+            // Bubble Sorting
+            var arr4 = new List<int> {120, 81, 89, 134, 143, 150, 170, 190, -23, 40, 55, 61, 72};
+            //BubbleSort bSort = new BubbleSort();
+            //bSort.Sort(arr4);
+
+            SelectionSort sSort = new SelectionSort();
+            sSort.Sort(arr4);
+
             Console.ReadKey();
         }
     }
