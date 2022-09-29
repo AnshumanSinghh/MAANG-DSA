@@ -38,7 +38,7 @@ namespace DataStructure
 
             // Find best time to sell stock:
             //var prices = new List<int> { 7, 3, 1, 4, 6, 9 };
-            ////var prices = new List<int> { 7, 1, 5, 3, 6, 4 };
+            //var prices = new List<int> { 7, 1, 5, 3, 6, 4 };
             //BestTimeToSellStock bestTimeToSell = new BestTimeToSellStock();
             //Console.WriteLine(bestTimeToSell.FindMaxProfit(prices));
             //Console.WriteLine(bestTimeToSell.FindBestDayToBuyAndSellStockForMaxProfit(prices));
@@ -74,6 +74,7 @@ namespace DataStructure
             //var x1 = 34874;
             //var x2 = 866578;
             //Console.WriteLine(computeSquareRoot.SquareRoot(2, x / 3, x));
+            //Console.WriteLine(computeSquareRoot.SquareRoot_2(x));
 
             //PerfectSquare perfectSquare = new PerfectSquare();
             //Console.WriteLine(perfectSquare.CheckIfPerfectSquare(2, (x / 2), x));  // if we take x/2 -1. Then for x = 4 it will fail.
@@ -82,7 +83,7 @@ namespace DataStructure
             //FirstBadVersion firstBadVersion = new FirstBadVersion();
             //var nums5 = new List<int> { 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1};
             //Console.WriteLine(firstBadVersion.GetFirstBadVersion(nums5, 0, nums5.Count)); 
-            ////Console.WriteLine(firstBadVersion.FirstBadVersion_2(nums5)); 
+            //Console.WriteLine(firstBadVersion.FirstBadVersion_2(nums5)); 
             //Console.ReadKey();
 
             // Ternary Search:
@@ -106,6 +107,8 @@ namespace DataStructure
             heapq.HeapPush(52);
             heapq.HeapPush(54);
             heapq.Peek();
+
+            // Binary Heap deletion
             heapq.HeapPop();
             heapq.Peek();
             Console.ReadKey();
