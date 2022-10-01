@@ -99,9 +99,9 @@ namespace DataStructure
             //var answer = findMinAndMax.FindMinAndMax(arr3, 0, arr3.Count - 1);
             //Console.WriteLine(answer);
 
-            // Binary Heap:
+            /* Binary Heap */
             // insertion
-            //Heapq heapq = new Heapq();
+            Heapq heapq = new Heapq();
             //heapq.HeapPush(50);
             //heapq.HeapPush(55);
             //heapq.HeapPush(53);
@@ -113,8 +113,13 @@ namespace DataStructure
             //heapq.HeapPop();
             //heapq.Peek();
 
+            // Binary Heap : Creating Heap
+            //var arr5 = new List<int> { -1, 1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17 };  // neglect -1 added for 1 based indexing
+            //heapq.BuildHeap(arr5, arr5.Count, false);
+
+            /* SORTING */
             // Bubble Sorting
-            var arr4 = new List<int> {120, 81, 89, 134, 143, 150, 170, 190, -23, 40, 55, 61, 72};
+            //var arr4 = new List<int> {120, 81, 89, 134, 143, 150, 170, 190, -23, 40, 55, 61, 72};
             //BubbleSort bSort = new BubbleSort();
             //bSort.Sort(arr4);
 
