@@ -43,14 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assignment1\ComputeSquareRoot.cs" />
-    <Compile Include="Assignment1\PerfectSquare.cs" />
+    <Compile Include="Assignment5\ComputeSquareRoot.cs" />
+    <Compile Include="Assignment5\PerfectSquare.cs" />
     <Compile Include="BestTimeToSellStock.cs" />
     <Compile Include="BinarySearch.cs" />
     <Compile Include="BS_Q1.cs" />
     <Compile Include="BS_Q2.cs" />
     <Compile Include="BS_Q3.cs" />
-    <Compile Include="Assignment1\FirstBadVersion.cs" />
+    <Compile Include="Assignment5\FirstBadVersion.cs" />
     <Compile Include="DivideAndConquer\FindMinAndMaxInArray.cs" />
     <Compile Include="MoveZeroes.cs" />
     <Compile Include="Program.cs" />

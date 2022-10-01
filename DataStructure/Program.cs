@@ -1,4 +1,4 @@
-﻿using DataStructure.Assignment1;
+﻿using DataStructure.Assignment5;
 using DataStructure.DivideAndConquer;
 using DataStructure.Sorting_Algos;
 using DataStructure.Sorting_Algos.BinaryHeap;
@@ -118,8 +118,8 @@ namespace DataStructure
             //BubbleSort bSort = new BubbleSort();
             //bSort.Sort(arr4);
 
-            SelectionSort sSort = new SelectionSort();
-            sSort.Sort(arr4);
+            //SelectionSort sSort = new SelectionSort();
+            //sSort.Sort(arr4);
 
             Console.ReadKey();
         }
