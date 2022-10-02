@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Assignment5\ComputeSquareRoot.cs" />
     <Compile Include="Assignment5\PerfectSquare.cs" />
+    <Compile Include="Assignment_6\BuildMinHeap.cs" />
+    <Compile Include="Assignment_6\KMostFrequentWords.cs" />
     <Compile Include="BestTimeToSellStock.cs" />
     <Compile Include="BinarySearch.cs" />
     <Compile Include="BS_Q1.cs" />

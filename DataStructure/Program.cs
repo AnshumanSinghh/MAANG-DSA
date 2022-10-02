@@ -1,4 +1,5 @@
 ﻿using DataStructure.Assignment5;
+using DataStructure.Assignment_6;
 using DataStructure.DivideAndConquer;
 using DataStructure.Sorting_Algos;
 using DataStructure.Sorting_Algos.BinaryHeap;
@@ -101,7 +102,7 @@ namespace DataStructure
 
             /* Binary Heap */
             // insertion
-            Heapq heapq = new Heapq();
+            //Heapq heapq = new Heapq();
             //heapq.HeapPush(50);
             //heapq.HeapPush(55);
             //heapq.HeapPush(53);
@@ -125,6 +126,17 @@ namespace DataStructure
 
             //SelectionSort sSort = new SelectionSort();
             //sSort.Sort(arr4);
+
+
+            /* ASSIGNMENT - 6 */
+            //var arr5 = new List<int> { 1, 3, 7, 9, 12, 10, 8, 16, 18, 22, 27 };
+            //BuildMinHeap buildMinHeap = new BuildMinHeap();
+            //buildMinHeap.MinHeap(arr5, arr5.Count);
+
+            KMostFrequentWords kMostFrequent = new KMostFrequentWords();
+            var names = new List<string> { "priya", "bhatia", "akshay", "arpit", "priya", "arpit", "bhatia", "bhatia" };
+            //var names = new List<string> { "1", "1", "1", "2", "2", "3", "40", "40", "40", "40", "40", "10", "10", "12", "12", "7", "7", "7", "7" };
+            kMostFrequent.GetKMostFrequnetWords(names, names.Count, 3);
 
             Console.ReadKey();
         }
