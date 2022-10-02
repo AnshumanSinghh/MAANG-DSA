@@ -75,7 +75,7 @@ namespace DataStructure.Assignment_6
                 parent_idx = right_child_idx;
             }
 
-            if (parent_idx != largest_idx) // Means left_child or right child is smaller than parent.
+            if (parent_idx != largest_idx) // Means left_child or right child is greater than parent.
             {
                 (keyValuePairsList[parent_idx], keyValuePairsList[largest_idx]) = (keyValuePairsList[largest_idx], keyValuePairsList[parent_idx]);  // Swap keyValuePairsList elements
                 Heapify(ref keyValuePairsList, parent_idx, n);
