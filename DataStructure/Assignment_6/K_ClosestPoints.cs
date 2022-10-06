@@ -21,7 +21,7 @@ namespace DataStructure.Assignment_6
                 {
                     x = coordinates[0];
                     y = coordinates[1];
-                    dist = GetDistanceFromOrigin(x, y);
+                    dist = GetSquareOfDistanceFromOrigin(x, y);
                     HeapPush(new KeyValuePair<double, List<int>>(dist, coordinates));  // will act as PriorityQueue
                                                                                        // or BinaryHeap
                     counter++;
@@ -39,7 +39,7 @@ namespace DataStructure.Assignment_6
             {
                 x = nums[i][0];
                 y = nums[i][1];
-                dist = GetDistanceFromOrigin(x, y);
+                dist = GetSquareOfDistanceFromOrigin(x, y);
                 if ( dist < distancesWithCord[0].Key)
                 {
                     HeapPop();
@@ -105,9 +105,11 @@ namespace DataStructure.Assignment_6
             }
         }
 
-        private double GetDistanceFromOrigin(int x, int y)
+        private double GetSquareOfDistanceFromOrigin(int x, int y)
         {
-            return (x * x) + (y * y);
+            return (x * x) + (y * y); // we are skipping the evaluation of Sqrt (as it will incerease time complexity). Bcz
+                                      // if Sqrt(x^2 + y^2) is greater or smaller then (x^2 + y^2) will be also greater or
+                                      // smaller. We don't need to caculate Sqrt.
         }
     }
 }
