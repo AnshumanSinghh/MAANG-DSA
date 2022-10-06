@@ -1,5 +1,6 @@
 ﻿using DataStructure.Assignment5;
 using DataStructure.Assignment_6;
+using DataStructure.Assignment_7;
 using DataStructure.DivideAndConquer;
 using DataStructure.Sorting_Algos;
 using DataStructure.Sorting_Algos.BinaryHeap;
@@ -133,14 +134,31 @@ namespace DataStructure
             //BuildMinHeap buildMinHeap = new BuildMinHeap();
             //buildMinHeap.MinHeap(arr5, arr5.Count);
 
-            KMostFrequentWords kMostFrequent = new KMostFrequentWords();
-            var names = new List<string> { "priya", "bhatia", "akshay", "arpit", "priya", "arpit", "bhatia", "bhatia" };
+            //KMostFrequentWords kMostFrequent = new KMostFrequentWords();
+            //var names = new List<string> { "priya", "bhatia", "akshay", "arpit", "priya", "arpit", "bhatia", "bhatia" };
             //var names = new List<string> { "1", "1", "1", "2", "2", "3", "40", "40", "40", "40", "40", "10", "10", "12", "12", "7", "7", "7", "7" };
             //kMostFrequent.GetKMostFrequnetWords(names, names.Count, 3);
 
-            K_ClosestPoints k_Closest = new K_ClosestPoints();
-            var coorDinates = new List<List<int>> { new List<int> { 3, 3}, new List<int> { 5, -1}, new List<int> { -2, 4} };
-            k_Closest.GetKClosestPoints(coorDinates, 2);
+            //K_ClosestPoints k_Closest = new K_ClosestPoints();
+            //var coorDinates = new List<List<int>> { new List<int> { 3, 3}, new List<int> { 5, -1}, new List<int> { -2, 4} };
+            //k_Closest.GetKClosestPoints(coorDinates, 2);
+
+            //ThreePointsClosestSum pointsClosest = new ThreePointsClosestSum();
+            //var arr6 = new List<int> { 1, 2, 3, 4};
+
+            //Collinear collinear = new Collinear();
+            //var points = new List<List<int>>() {
+            //                                    new List<int>{ 1, 1},
+            //                                    new List<int>{ 1, 4},
+            //                                    new List<int>{ 1, 5 }
+            //                                };
+            //Console.WriteLine(collinear.CheckIfCollinear(points));
+
+            E_Commerce eCommerce = new E_Commerce();
+            var products = new List<string> { "yellowShirt", "redHat", "blackShirt", "bluePants", "redHat", "pinkHat", 
+                                               "blackShirt", "yellowShirt", "greenPants", "greenPants", "greenPants"};
+            eCommerce.FeatureProduct(products);
+
             Console.ReadKey();
         }
     }
