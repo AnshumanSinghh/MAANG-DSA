@@ -15,6 +15,11 @@ namespace DataStructure.Sorting_Algos.BinaryHeap
             arr[0] = -1;
             size = 0;
         }
+        /*
+         * Time Complexity for Heap Creation:
+         * Since adding 1 node and heapifying it takes O(log n). So, adding n elements Time complexity will be
+         * O(n Log n)
+         */
         public void HeapPush(int val)
         {
             size += 1;
@@ -26,6 +31,10 @@ namespace DataStructure.Sorting_Algos.BinaryHeap
             MinHeapifyForHeapPush(index);
         }
 
+        /* 
+         * Time Complexity of Insertion in Heap:
+         * T.C = O(1) [swapping parent and leaf node] + O(H) [swapping the nodes for Heapify, where H = O(Log n) for CBT]
+         */
         public void HeapPop()
         {
             if (size == 0)
@@ -150,6 +159,10 @@ namespace DataStructure.Sorting_Algos.BinaryHeap
             arr[childIndex] = temp;
         }
 
+        /* 
+         * Time Complexity of Heap Insertion:
+         * T.C = O(1) [adding a node] + O(H) [swapping the nodes, where H = O(Log n) for CBT]
+         */
         private void MaxHeapifyForHeapPush(int index)
         {
             while (index > 1)
