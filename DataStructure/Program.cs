@@ -143,6 +143,8 @@ namespace DataStructure
             //var coorDinates = new List<List<int>> { new List<int> { 3, 3}, new List<int> { 5, -1}, new List<int> { -2, 4} };
             //k_Closest.GetKClosestPoints(coorDinates, 2);
 
+            
+            /*ASSIGNMENT 7*/
             //ThreePointsClosestSum pointsClosest = new ThreePointsClosestSum();
             //var arr6 = new List<int> { 1, 2, 3, 4};
 
@@ -154,10 +156,13 @@ namespace DataStructure
             //                                };
             //Console.WriteLine(collinear.CheckIfCollinear(points));
 
-            E_Commerce eCommerce = new E_Commerce();
+            //E_Commerce eCommerce = new E_Commerce();
             var products = new List<string> { "yellowShirt", "redHat", "blackShirt", "bluePants", "redHat", "pinkHat", 
                                                "blackShirt", "yellowShirt", "greenPants", "greenPants", "greenPants"};
-            eCommerce.FeatureProduct(products);
+            //eCommerce.FeatureProduct(products);
+
+            E_Commerce_2 eCommerce2 = new E_Commerce_2();
+            eCommerce2.FeatureProduct(products);
 
             Console.ReadKey();
         }
