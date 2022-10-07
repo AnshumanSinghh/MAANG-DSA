@@ -18,10 +18,10 @@ namespace DataStructure.Sorting_Algos
                 var key = arr[i];
                 while ((j >= 0) && (arr[j] > key))
                 {
-                    arr[j + 1] = key;
+                    arr[j + 1] = arr[j];
                     j -= 1;
                 }
-                arr[j + 1] = key;
+                arr[j + 1] = key; // Putting key after the element just smaller than it.
             }
             return arr;
         }
