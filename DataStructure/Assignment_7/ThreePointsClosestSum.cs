@@ -42,7 +42,8 @@ namespace DataStructure.Assignment_7
                     {
                         k--;
                     }
-                    else // if smaller or equal, then increase j to increase the sum
+                    else // if smaller then increase j to increase the sum. [for equal condition we have already handled
+                         // that in line 32]
                     {
                         j++;
                     }
