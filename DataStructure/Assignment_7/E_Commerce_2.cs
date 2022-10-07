@@ -15,7 +15,7 @@ namespace DataStructure.Assignment_7
          * 
          * Time Complexity = O(n) [making counter] + O(N) (Iterating all unique products) + O(s) [string comparer, Line 42]
          *  
-         * Space Complaxity = O(N) [making counter]
+         * Space Complexity = O(N) [storing counter]
          * 
          * where,
          * n = length of products.
