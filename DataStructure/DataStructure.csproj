@@ -51,6 +51,7 @@
     <Compile Include="Assignment_7\Collinear.cs" />
     <Compile Include="Assignment_7\E_Commerce.cs" />
     <Compile Include="Assignment_7\E_Commerce_2.cs" />
+    <Compile Include="Assignment_7\SortTheAlmostSortedArray.cs" />
     <Compile Include="Assignment_7\ThreePointsClosestSum.cs" />
     <Compile Include="BestTimeToSellStock.cs" />
     <Compile Include="BinarySearch.cs" />

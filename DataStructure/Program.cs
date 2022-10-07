@@ -118,7 +118,8 @@ namespace DataStructure
             // Binary Heap : Creating Heap
             //var arr5 = new List<int> { -1, 1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17 };  // neglect -1 added for 1 based indexing
             //heapq.BuildHeap(arr5, arr5.Count, false);
-
+            //InsertionSorting insertion = new InsertionSorting();
+            //insertion.Sort(arr5);
             /* SORTING */
             // Bubble Sorting
             //var arr4 = new List<int> {120, 81, 89, 134, 143, 150, 170, 190, -23, 40, 55, 61, 72};
@@ -143,10 +144,11 @@ namespace DataStructure
             //var coorDinates = new List<List<int>> { new List<int> { 3, 3}, new List<int> { 5, -1}, new List<int> { -2, 4} };
             //k_Closest.GetKClosestPoints(coorDinates, 2);
 
-            
+
             /*ASSIGNMENT 7*/
             //ThreePointsClosestSum pointsClosest = new ThreePointsClosestSum();
-            //var arr6 = new List<int> { 1, 2, 3, 4};
+            //var arr6 = new List<int> { 1, 2, 3, 4 };
+            //Console.WriteLine($"Closest Sum: {pointsClosest.GetThreePoints(arr6, 6)}");
 
             //Collinear collinear = new Collinear();
             //var points = new List<List<int>>() {
@@ -157,12 +159,16 @@ namespace DataStructure
             //Console.WriteLine(collinear.CheckIfCollinear(points));
 
             //E_Commerce eCommerce = new E_Commerce();
-            var products = new List<string> { "yellowShirt", "redHat", "blackShirt", "bluePants", "redHat", "pinkHat", 
-                                               "blackShirt", "yellowShirt", "greenPants", "greenPants", "greenPants"};
+            //var products = new List<string> { "yellowShirt", "redHat", "blackShirt", "bluePants", "redHat", "pinkHat", 
+            //                                   "blackShirt", "yellowShirt", "greenPants", "greenPants", "greenPants"};
             //eCommerce.FeatureProduct(products);
 
-            E_Commerce_2 eCommerce2 = new E_Commerce_2();
-            eCommerce2.FeatureProduct(products);
+            //E_Commerce_2 eCommerce2 = new E_Commerce_2();
+            //eCommerce2.FeatureProduct(products);
+
+            SortTheAlmostSortedArray sortTheAlmostSorted = new SortTheAlmostSortedArray();
+            var arr6 = new List<int> { 1, 2, 3, 4, 10, 8, 9 };
+            sortTheAlmostSorted.InsertionSort(arr6);
 
             Console.ReadKey();
         }
