@@ -72,6 +72,7 @@ namespace DataStructure
             //Console.WriteLine(searchElementIn2DArray.CheckIfElementExists_2(nums4, 29));
             //Console.ReadKey();
 
+            /* ASSIGNMENT 5 */
             //ComputeSquareRoot computeSquareRoot = new ComputeSquareRoot();
             //var x = 837465734;
             //var x1 = 34874;
@@ -118,9 +119,11 @@ namespace DataStructure
             // Binary Heap : Creating Heap
             //var arr5 = new List<int> { -1, 1, 3, 5, 4, 6, 13, 10, 9, 8, 15, 17 };  // neglect -1 added for 1 based indexing
             //heapq.BuildHeap(arr5, arr5.Count, false);
+
+            /* SORTING */
             //InsertionSorting insertion = new InsertionSorting();
             //insertion.Sort(arr5);
-            /* SORTING */
+
             // Bubble Sorting
             //var arr4 = new List<int> {120, 81, 89, 134, 143, 150, 170, 190, -23, 40, 55, 61, 72};
             //BubbleSort bSort = new BubbleSort();
