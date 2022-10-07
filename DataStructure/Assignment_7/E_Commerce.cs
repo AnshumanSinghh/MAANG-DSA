@@ -9,9 +9,9 @@ namespace DataStructure.Assignment_7
     class E_Commerce
     {
         /// <summary>
-        /// Time Complexity = O(n)[Counter (Line 23)] + 2*O(N)[KeysList (Line 27) + Iteration (Line 32)] = O(n) + 2*(O(N))
+        /// Time Complexity = O(n)[Counter (Line 23)] + 2*O(N)[KeysList (Line 27) + Iteration (Line 35)] + O(s) [string Comparer, Line 49] = O(n) + 2*(O(N)) + (s)
         /// Space Complexity = O(1)[productWithSoldQuantity] + O(N) [eachProductSold] = O(N)
-        /// -->> Where N is the Size of input List and n = length of input Array (products).
+        /// -->> Where N is the Size of input List, n = length of input Array (products) and s = length of smaller product name.
         /// </summary>
 
         // Space Complexity = O(1) as it will contain only 1 element
@@ -45,6 +45,7 @@ namespace DataStructure.Assignment_7
                 // product is bigger than the Top() product of heap then delete the Top element and Push the current product in heap
                 else if (eachProductSold[products[i]] == productWithSoldQuantity[0].Value)
                 {
+                    // Time compplexity of ComparTo() will be O(s) where s = smaller string length
                     if (products[i].CompareTo(productWithSoldQuantity[0].Key) >= 0) // if curr string >= too product in heap
                     {
                         HeapPop(); // removing the top
