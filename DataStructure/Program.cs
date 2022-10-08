@@ -132,6 +132,14 @@ namespace DataStructure
             //SelectionSort sSort = new SelectionSort();
             //sSort.Sort(arr4);
 
+            // MergeSort
+            MergeSorting mergeSorting = new MergeSorting();
+            var arr7 = new List<int> { 50, 70, 6, 13, 80, 62, 98, 27 };
+            var sortedArr = mergeSorting.MergeSort(arr7, 0, arr7.Count - 1);
+            foreach (var ele in sortedArr)
+            {
+                Console.Write(ele + ", ");
+            }
 
             /* ASSIGNMENT - 6 */
             //var arr5 = new List<int> { 1, 3, 7, 9, 12, 10, 8, 16, 18, 22, 27 };
@@ -143,9 +151,9 @@ namespace DataStructure
             ////var names = new List<string> { "1", "1", "1", "2", "2", "3", "40", "40", "40", "40", "40", "10", "10", "12", "12", "7", "7", "7", "7" };
             //kMostFrequent.GetKMostFrequnetWords(names, names.Count, 3);
 
-            K_ClosestPoints k_Closest = new K_ClosestPoints();
-            var coorDinates = new List<List<int>> { new List<int> { 3, 3 }, new List<int> { 5, -1 }, new List<int> { -2, 4 }, new List<int> { -2, 1 } };
-            k_Closest.GetKClosestPoints(coorDinates, 2);
+            //K_ClosestPoints k_Closest = new K_ClosestPoints();
+            //var coorDinates = new List<List<int>> { new List<int> { 3, 3 }, new List<int> { 5, -1 }, new List<int> { -2, 4 }, new List<int> { -2, 1 } };
+            //k_Closest.GetKClosestPoints(coorDinates, 2);
 
 
             /*ASSIGNMENT 7*/

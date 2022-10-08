@@ -68,6 +68,7 @@
     <Compile Include="Sorting_Algos\BinaryHeap\Heapq.cs" />
     <Compile Include="Sorting_Algos\BubbleSort.cs" />
     <Compile Include="Sorting_Algos\InsertionSorting.cs" />
+    <Compile Include="Sorting_Algos\MergeSorting.cs" />
     <Compile Include="Sorting_Algos\SelectionSort.cs" />
     <Compile Include="TernarySearch.cs" />
   </ItemGroup>
