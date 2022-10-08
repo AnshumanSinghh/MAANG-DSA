@@ -7,7 +7,22 @@ using System.Threading.Tasks;
 namespace DataStructure.Assignment_6
 {
     class K_ClosestPoints
-    {
+    {   /*
+         * Time Complexity:
+         * 1) Counter = O(n) where n is length of nums
+         * 
+         * 2) Insertion of k elements = O( k log k) [addint takes O(1) and heapifying that takes log k. Since we have
+         * k elements only in heap]
+         * 
+         * 3) Deletion of n-k elements = O((n-k)*log k) [As in worst case we are deleting n-k elements and deletion of 1 node
+         * takes O(1) but heapyifying it takes log k and we doing it for n-k nodes. So, T.C = O((n-k)*log k) for deletion.]
+         * 
+         * 4) Again we are doing insertion for n-k elements. So, it will take O((n-k)*Log k).
+         * 
+         * Now over all time complexity will be = n + (k log k) + (n-k)*log k + (n-k)*Log k ~= O(n log k)  [Add steps: 1 + 2 + 3 + 4]
+         * If you observe we are inserting all elements but mainting the heap of size k only. So, ultimately it will 
+         * take O(n * log k).
+         */
         List<KeyValuePair<double, List<int>>> distancesWithCord = new List<KeyValuePair<double, List<int>>>();
         int size = 0;
         public void GetKClosestPoints(List<List<int>> nums, int k)
