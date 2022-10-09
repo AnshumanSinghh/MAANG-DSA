@@ -132,11 +132,20 @@ namespace DataStructure
             //SelectionSort sSort = new SelectionSort();
             //sSort.Sort(arr4);
 
-            // MergeSort
-            MergeSorting mergeSorting = new MergeSorting();
-            var arr7 = new List<int> { 50, 70, 6, 13, 80, 62, 98, 27 };
-            var sortedArr = mergeSorting.MergeSort(arr7, 0, arr7.Count - 1);
-            foreach (var ele in sortedArr)
+            //// MergeSort
+            //MergeSorting mergeSorting = new MergeSorting();
+            //var arr7 = new List<int> { 50, 70, 6, 13, 80, 62, 98, 27 };
+            //var sortedArr = mergeSorting.MergeSort(arr7, 0, arr7.Count - 1);
+            //foreach (var ele in sortedArr)
+            //{
+            //    Console.Write(ele + ", ");
+            //}
+
+            // QuickSorting
+            QuickSorting quickSorting = new QuickSorting();
+            var arr8 = new List<int> { 50, 70, 6, 13, 80, 62, 98, 27 };
+            var sortedArr1 = quickSorting.QuickSort(arr8, 0, arr8.Count - 1);
+            foreach (var ele in sortedArr1)
             {
                 Console.Write(ele + ", ");
             }

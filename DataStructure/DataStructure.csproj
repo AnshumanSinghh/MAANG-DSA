@@ -69,12 +69,15 @@
     <Compile Include="Sorting_Algos\BubbleSort.cs" />
     <Compile Include="Sorting_Algos\InsertionSorting.cs" />
     <Compile Include="Sorting_Algos\MergeSorting.cs" />
+    <Compile Include="Sorting_Algos\QuickSorting.cs" />
     <Compile Include="Sorting_Algos\SelectionSort.cs" />
     <Compile Include="TernarySearch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Assignment_8_CSharp\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
