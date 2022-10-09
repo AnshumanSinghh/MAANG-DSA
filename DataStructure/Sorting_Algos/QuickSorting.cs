@@ -42,7 +42,7 @@ namespace DataStructure.Sorting_Algos
          * It is inplace and unstable sorting algorithm.
          * After every call of partion method pivot will be at it's correct position. Which means in left of 'pivot' element
          * every element is smaller than 'pivot' (if 'pivot' is not the 1st element) and in right every element is larger than 
-         * that (if 'pivot' is not the last element).
+         * or equal to 'pivot' elements are there (if 'pivot' is not the last element).
          */
         public List<int> QuickSort(List<int> arr, int start, int end)
         {
