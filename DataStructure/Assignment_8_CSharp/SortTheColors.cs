@@ -55,7 +55,7 @@ namespace DataStructure.Assignment_8_CSharp
                 }
                 else // if curr element is 1
                 {
-                    i++; // if it 1 just skip any comparirion as we are already sorting 1 and 2. So, if 1 and 2 are
+                    i++; // if it is 1 just skip any comparirion as we are already sorting 0 and 2. So, if 0 and 2 are
                          // at it's correct positions then 1 will be automatically at it's correct position.
                 }
             }
