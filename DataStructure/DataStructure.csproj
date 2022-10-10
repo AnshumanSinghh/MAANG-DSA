@@ -53,6 +53,7 @@
     <Compile Include="Assignment_7\E_Commerce_2.cs" />
     <Compile Include="Assignment_7\SortTheAlmostSortedArray.cs" />
     <Compile Include="Assignment_7\ThreePointsClosestSum.cs" />
+    <Compile Include="Assignment_8_CSharp\SortTheColors.cs" />
     <Compile Include="BestTimeToSellStock.cs" />
     <Compile Include="BinarySearch.cs" />
     <Compile Include="BS_Q1.cs" />
@@ -76,8 +77,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assignment_8_CSharp\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,6 +6,7 @@ using DataStructure.Sorting_Algos;
 using DataStructure.Sorting_Algos.BinaryHeap;
 using System;
 using System.Collections.Generic;
+using DataStructure.Assignment_8_CSharp;
 
 namespace DataStructure
 {
@@ -142,13 +143,13 @@ namespace DataStructure
             //}
 
             // QuickSorting
-            QuickSorting quickSorting = new QuickSorting();
-            var arr8 = new List<int> { 50, 70, 6, 13, 80, 62, 98, 27 };
-            var sortedArr1 = quickSorting.QuickSort(arr8, 0, arr8.Count - 1);
-            foreach (var ele in sortedArr1)
-            {
-                Console.Write(ele + ", ");
-            }
+            //QuickSorting quickSorting = new QuickSorting();
+            //var arr8 = new List<int> { 50, 70, 6, 13, 80, 62, 98, 27 };
+            //var sortedArr1 = quickSorting.QuickSort(arr8, 0, arr8.Count - 1);
+            //foreach (var ele in sortedArr1)
+            //{
+            //    Console.Write(ele + ", ");
+            //}
 
             /* ASSIGNMENT - 6 */
             //var arr5 = new List<int> { 1, 3, 7, 9, 12, 10, 8, 16, 18, 22, 27 };
@@ -190,6 +191,16 @@ namespace DataStructure
             //var arr6 = new List<int> { 1, 2, 3, 4, 10, 8, 9 };
             //sortTheAlmostSorted.InsertionSort(arr6);
 
+
+            /* ASSIGNMEN 8 */
+            // Sort Colors:
+            SortTheColors sortTheColors = new SortTheColors();
+            var colors = new List<int> { 2, 0, 2, 1, 1, 0 };
+            var ans = sortTheColors.Sort(colors);
+            foreach (var color in ans)
+            {
+                Console.Write(color + ", ");
+            }
             Console.ReadKey();
         }
     }
