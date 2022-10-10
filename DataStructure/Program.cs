@@ -192,15 +192,29 @@ namespace DataStructure
             //sortTheAlmostSorted.InsertionSort(arr6);
 
 
-            /* ASSIGNMEN 8 */
-            // Sort Colors:
-            SortTheColors sortTheColors = new SortTheColors();
-            var colors = new List<int> { 2, 0, 2, 1, 1, 0 };
-            var ans = sortTheColors.Sort(colors);
-            foreach (var color in ans)
-            {
-                Console.Write(color + ", ");
-            }
+            /* ASSIGNMENT 8 */
+            // Sort Colors: Ques2
+            //SortTheColors sortTheColors = new SortTheColors();
+            //var colors = new List<int> { 2, 0, 2, 1, 1, 0 };
+            //var ans = sortTheColors.Sort(colors);
+            //foreach (var color in ans)
+            //{
+            //    Console.Write(color + ", ");
+            //}
+
+            // KthLargestOrSmallest
+            KthLargestOrSmallestSolver kthQuesSolver = new KthLargestOrSmallestSolver();
+            var nums = new List<int> { 40, 25, 68, 79, 52, 66, 89, 97 };
+
+            // KthSmallest - Ques1
+            kthQuesSolver.Solve(nums, 2, "KthSmallest");
+
+            // KthLargest - Ques3
+            kthQuesSolver = new KthLargestOrSmallestSolver();
+            kthQuesSolver.Solve(nums, 2, "KthLargest");
+
+            
+
             Console.ReadKey();
         }
     }
