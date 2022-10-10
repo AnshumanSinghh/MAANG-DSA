@@ -71,7 +71,7 @@ namespace DataStructure.Assignment_7
         }
 
         // Building min Heap [this method will be not called at all as we are only storing 1 element in heap. If heapSize
-        // is >= 4 only then this will be called]. For this Question it will be not called
+        // is >= 1 only then this will be called]. For this Question it will be not called
         private void MinHeapify(int smallest, int n)
         {
             var parent_idx = smallest;
