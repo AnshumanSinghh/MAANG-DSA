@@ -203,17 +203,29 @@ namespace DataStructure
             //}
 
             // KthLargestOrSmallest
-            KthLargestOrSmallestSolver kthQuesSolver = new KthLargestOrSmallestSolver();
-            var nums = new List<int> { 40, 25, 68, 79, 52, 66, 89, 97 };
+            //KthLargestOrSmallestSolver kthQuesSolver = new KthLargestOrSmallestSolver();
+            //var nums = new List<int> { 40, 25, 68, 79, 52, 66, 89, 97 };
 
-            // KthSmallest - Ques1
-            kthQuesSolver.Solve(nums, 2, "KthSmallest");
+            //// KthSmallest - Ques1
+            //kthQuesSolver.Solve(nums, 2, "KthSmallest");
 
-            // KthLargest - Ques3
-            kthQuesSolver = new KthLargestOrSmallestSolver();
-            kthQuesSolver.Solve(nums, 2, "KthLargest");
+            //// KthLargest - Ques3
+            //kthQuesSolver = new KthLargestOrSmallestSolver();
+            //kthQuesSolver.Solve(nums, 2, "KthLargest");
 
-            
+            // Find Majority ELements: Q4
+            //MajorityElement majorityElement = new MajorityElement();
+            //var nums2 = new List<int> { 2, 1, 2, 1, 2, 1, 2 };
+            ////var nums2 = new List<int> { 2, 2, 1, 1, 1, 2, 2 };
+            //Console.WriteLine(majorityElement.GetTheMajorityElement(nums2));
+
+            // Peak Element: Q5
+            PeakElement peakElement = new PeakElement();
+            //var arr6 = new List<int> { 1, 2, 3, 1, 5, 4, 3, 2};
+            //var arr6 = new List<int> { 5, 4, 3, 2, 1, 2, 3, 4 };
+            //var arr6 = new List<int> { 1, 2, 3, 4, 1 };
+            var arr6 = new List<int> { 1, 2, 1, 4, 5, 6 };
+            Console.WriteLine(peakElement.GetPeakElement(arr6));
 
             Console.ReadKey();
         }
