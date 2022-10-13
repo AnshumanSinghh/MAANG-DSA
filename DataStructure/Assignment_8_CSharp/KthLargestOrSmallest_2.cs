@@ -34,10 +34,10 @@ namespace DataStructure.Assignment_8_CSharp
             if (start < end) 
             {
                 var p = Partition(arr, start, end);
-                // Kth largest means the element will be at end (as we are applying Qu8ick Sort for
+                // Kth largest means the element will be at end (as we are applying Quick Sort for
                 // sorting the elements in ascending order). So, it will be equal to n - k but
-                // here 'end' is index not the length of array so e need to add 1 to it. Finally
-                // it will be `end-k+1`. Similarlyv Kth smallest means it will be at `k-1` index 
+                // here 'end' is index not the length of array so we need to add 1 to it. Finally
+                // it will be `end-k+1`. Similarly Kth smallest means it will be at `k-1` index 
                 // after sorting (here k is not starting from 0 that's why we are substracting 1
                 // from it.
                 if (ResultIndex == -1)
