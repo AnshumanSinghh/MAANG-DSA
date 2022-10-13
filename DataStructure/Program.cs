@@ -145,6 +145,8 @@ namespace DataStructure
             // QuickSorting
             //QuickSorting quickSorting = new QuickSorting();
             //var arr8 = new List<int> { 50, 70, 6, 13, 80, 62, 98, 27 };
+            ////var sortedArr1 = quickSorting.QuickSort(arr8, 0, arr8.Count - 1);
+            //var quickSorting = new RandomisedQuickSort();
             //var sortedArr1 = quickSorting.QuickSort(arr8, 0, arr8.Count - 1);
             //foreach (var ele in sortedArr1)
             //{
@@ -220,12 +222,12 @@ namespace DataStructure
             //Console.WriteLine(majorityElement.GetTheMajorityElement(nums2));
 
             // Peak Element: Q5
-            PeakElement peakElement = new PeakElement();
+            //PeakElement peakElement = new PeakElement();
             //var arr6 = new List<int> { 1, 2, 3, 1, 5, 4, 3, 2};
             //var arr6 = new List<int> { 5, 4, 3, 2, 1, 2, 3, 4 };
             //var arr6 = new List<int> { 1, 2, 3, 4, 1 };
-            var arr6 = new List<int> { 1, 2, 1, 4, 5, 6 };
-            Console.WriteLine(peakElement.GetPeakElement(arr6));
+            //var arr6 = new List<int> { 1, 2, 1, 4, 5, 6 };
+            //Console.WriteLine(peakElement.GetPeakElement(arr6));
 
             Console.ReadKey();
         }

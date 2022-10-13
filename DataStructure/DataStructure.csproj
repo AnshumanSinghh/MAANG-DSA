@@ -74,6 +74,7 @@
     <Compile Include="Sorting_Algos\InsertionSorting.cs" />
     <Compile Include="Sorting_Algos\MergeSorting.cs" />
     <Compile Include="Sorting_Algos\QuickSorting.cs" />
+    <Compile Include="Sorting_Algos\RandomisedQuickSort.cs" />
     <Compile Include="Sorting_Algos\SelectionSort.cs" />
     <Compile Include="TernarySearch.cs" />
   </ItemGroup>
