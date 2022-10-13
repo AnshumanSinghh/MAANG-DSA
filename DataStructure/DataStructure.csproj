@@ -54,6 +54,7 @@
     <Compile Include="Assignment_7\SortTheAlmostSortedArray.cs" />
     <Compile Include="Assignment_7\ThreePointsClosestSum.cs" />
     <Compile Include="Assignment_8_CSharp\KthLargestOrSmallestSolver.cs" />
+    <Compile Include="Assignment_8_CSharp\KthLargestOrSmallest_2.cs" />
     <Compile Include="Assignment_8_CSharp\MajorityElement.cs" />
     <Compile Include="Assignment_8_CSharp\PeakElement.cs" />
     <Compile Include="Assignment_8_CSharp\SortTheColors.cs" />

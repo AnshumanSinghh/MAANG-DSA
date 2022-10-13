@@ -206,7 +206,7 @@ namespace DataStructure
 
             // KthLargestOrSmallest
             //KthLargestOrSmallestSolver kthQuesSolver = new KthLargestOrSmallestSolver();
-            //var nums = new List<int> { 40, 25, 68, 79, 52, 66, 89, 97 };
+            var nums = new List<int> { 40, 25, 68, 79, 52, 66, 89, 97 };
 
             //// KthSmallest - Ques1
             //kthQuesSolver.Solve(nums, 2, "KthSmallest");
@@ -214,6 +214,14 @@ namespace DataStructure
             //// KthLargest - Ques3
             //kthQuesSolver = new KthLargestOrSmallestSolver();
             //kthQuesSolver.Solve(nums, 2, "KthLargest");
+
+            // KthLargest - Ques1
+            KthLargestOrSmallest_2 kthLargestOrSmallest_2 = new KthLargestOrSmallest_2("KthSmallest"); 
+            var ans = kthLargestOrSmallest_2.GetKthLargestOrSmallest(nums, 2, 0, nums.Count - 1);
+            // KthSmallest - Ques3
+            kthLargestOrSmallest_2 = new KthLargestOrSmallest_2("KthLargest");
+            var ans2 = kthLargestOrSmallest_2.GetKthLargestOrSmallest(nums, 2, 0, nums.Count - 1);
+            Console.WriteLine($"KthSmallest element = {ans} and Kthlargest element = {ans2}"); 
 
             // Find Majority ELements: Q4
             //MajorityElement majorityElement = new MajorityElement();
