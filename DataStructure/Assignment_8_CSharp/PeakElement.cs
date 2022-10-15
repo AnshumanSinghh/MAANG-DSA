@@ -26,10 +26,10 @@ namespace DataStructure.Assignment_8_CSharp
          * bcz of this condition arr[n - 2] < arr[n - 1]. Ex:- { 1, 2, 3, 4, 5 }; peak index =  4 (last index of 
          * increasing slope);
          * 
-         * 3)Array contains decreasing elements (only decreasing slope). In this case 'peak' will be the last element
+         * 3)Array contains decreasing elements (only decreasing slope). In this case 'peak' will be the first element
          * bcz of this condition arr[0] > arr[1]. Ex:- { 5, 4, 3, 2, 1 }; peak index =  0 (first index of decreasing slope);
          * 
-         * 4) Contains only 1 increasing and 1 decreasing slope peak (Mixed of 2nd and 3rd case):
+         * 4) Contains only 1 increasing and 1 decreasing slope (Mixed of 2nd and 3rd case):
          * a) Ex:- { 1, 2, 3, 4, 5, 4, 3, 2}  --> peak index will be 4 [answer is starting index of decreaing slope]
          * b) Ex:- { 5, 4, 3, 2, 1, 2, 3, 4}  --> peak  indexes are: 0, 7 [answer is first and last index]
          * 
@@ -63,7 +63,7 @@ namespace DataStructure.Assignment_8_CSharp
                     /*
                      * Since, the graph is decreasing here. So, peak will be first index of decreasing slope & that
                      * would be either in the left of mid or mid can also be the first index of decreasing slope. 
-                     * So, right = mid not mid + 1; to search in left)
+                     * So, right = mid not mid - 1; to search in left)
                      */
                 }
             }
