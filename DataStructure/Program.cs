@@ -7,6 +7,7 @@ using DataStructure.Sorting_Algos.BinaryHeap;
 using System;
 using System.Collections.Generic;
 using DataStructure.Assignment_8_CSharp;
+using DataStructure.Assignment_9_CSharp;
 
 namespace DataStructure
 {
@@ -206,7 +207,7 @@ namespace DataStructure
 
             // KthLargestOrSmallest
             //KthLargestOrSmallestSolver kthQuesSolver = new KthLargestOrSmallestSolver();
-            var nums = new List<int> { 40, 25, 68, 79, 52, 66, 89, 97 };
+            //var nums = new List<int> { 40, 25, 68, 79, 52, 66, 89, 97 };
 
             //// KthSmallest - Ques1
             //kthQuesSolver.Solve(nums, 2, "KthSmallest");
@@ -216,12 +217,12 @@ namespace DataStructure
             //kthQuesSolver.Solve(nums, 2, "KthLargest");
 
             // KthLargest - Ques1
-            KthLargestOrSmallest_2 kthLargestOrSmallest_2 = new KthLargestOrSmallest_2("KthSmallest"); 
-            var ans = kthLargestOrSmallest_2.GetKthLargestOrSmallest(nums, 2, 0, nums.Count - 1);
-            // KthSmallest - Ques3
-            kthLargestOrSmallest_2 = new KthLargestOrSmallest_2("KthLargest");
-            var ans2 = kthLargestOrSmallest_2.GetKthLargestOrSmallest(nums, 2, 0, nums.Count - 1);
-            Console.WriteLine($"KthSmallest element = {ans} and Kthlargest element = {ans2}"); 
+            //KthLargestOrSmallest_2 kthLargestOrSmallest_2 = new KthLargestOrSmallest_2("KthSmallest"); 
+            //var ans = kthLargestOrSmallest_2.GetKthLargestOrSmallest(nums, 2, 0, nums.Count - 1);
+            //// KthSmallest - Ques3
+            //kthLargestOrSmallest_2 = new KthLargestOrSmallest_2("KthLargest");
+            //var ans2 = kthLargestOrSmallest_2.GetKthLargestOrSmallest(nums, 2, 0, nums.Count - 1);
+            //Console.WriteLine($"KthSmallest element = {ans} and Kthlargest element = {ans2}");
 
             // Find Majority ELements: Q4
             //MajorityElement majorityElement = new MajorityElement();
@@ -237,6 +238,10 @@ namespace DataStructure
             //var arr6 = new List<int> { 1, 2, 1, 4, 5, 6 };
             //Console.WriteLine(peakElement.GetPeakElement(arr6));
 
+
+            /* ASSIGNMENT 9 */
+            CalculatePower calculatePower = new CalculatePower();
+            Console.WriteLine(calculatePower.Power(4, -3));
             Console.ReadKey();
         }
     }
