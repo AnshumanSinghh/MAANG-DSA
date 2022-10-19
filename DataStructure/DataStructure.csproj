@@ -59,6 +59,7 @@
     <Compile Include="Assignment_8_CSharp\PeakElement.cs" />
     <Compile Include="Assignment_8_CSharp\SortTheColors.cs" />
     <Compile Include="Assignment_9_CSharp\CalculatePower.cs" />
+    <Compile Include="Assignment_9_CSharp\MedianOfTwoSortedArrays.cs" />
     <Compile Include="BestTimeToSellStock.cs" />
     <Compile Include="BinarySearch.cs" />
     <Compile Include="BS_Q1.cs" />

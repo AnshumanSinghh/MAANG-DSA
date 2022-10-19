@@ -240,8 +240,14 @@ namespace DataStructure
 
 
             /* ASSIGNMENT 9 */
-            CalculatePower calculatePower = new CalculatePower();
-            Console.WriteLine(calculatePower.Power(4, -3));
+            //CalculatePower calculatePower = new CalculatePower();
+            //Console.WriteLine(calculatePower.Power(4, -3));
+
+            MedianOfTwoSortedArrays medianOfTwoSortedArrays = new MedianOfTwoSortedArrays();
+            var n = new List<int> { -5, 3, 6, 12, 15}; // 1, 2, 3, 4, 7, 8, 9, 15
+            var m = new List<int> { -12, -10, -6, -3, 4, 10};
+            Console.WriteLine(medianOfTwoSortedArrays.Median(n, m));
+
             Console.ReadKey();
         }
     }
