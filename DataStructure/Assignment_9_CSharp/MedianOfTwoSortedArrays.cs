@@ -64,8 +64,11 @@ namespace DataStructure.Assignment_9_CSharp
         }
 
         /*
-         * What is median?
-         * Median is the middle value of sorted values / array (in case of even length it will Average of 2 
+         * Efficient Approach Using Binary Search (not mine):
+         * Time Complexity: O(log Min(x, y)) where x & y is length of input arrays
+         * Space Complexity: O(1)  No extra space required.
+         * Let's understand what is median?
+         * Median is the middle value of sorted values / array (in case of even length it will be Average of 2 
          * middle elements). Now, we can also say that median is the point which divides an array into 2 equal
          * halves. If this is the case we can use this property to find median.
          * 
