@@ -246,7 +246,8 @@ namespace DataStructure
             MedianOfTwoSortedArrays medianOfTwoSortedArrays = new MedianOfTwoSortedArrays();
             var n = new List<int> { -5, 3, 6, 12, 15}; // 1, 2, 3, 4, 7, 8, 9, 15
             var m = new List<int> { -12, -10, -6, -3, 4, 10};
-            Console.WriteLine(medianOfTwoSortedArrays.Median(n, m));
+            //Console.WriteLine(medianOfTwoSortedArrays.Median(n, m));
+            Console.WriteLine(medianOfTwoSortedArrays.Median_2(n, m));
 
             Console.ReadKey();
         }

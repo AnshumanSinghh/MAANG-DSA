@@ -62,5 +62,50 @@ namespace DataStructure.Assignment_9_CSharp
             }
             return mid2;  // if odd
         }
+
+        public double Median_2(List<int> num1, List<int> num2)
+        {
+            // If num1 length is greater than num2 array. 
+            if (num1.Count > num2.Count)
+            {
+                return Median_2(num2, num1);
+            }
+
+            var x = num1.Count;
+            var y = num2.Count;
+
+            int low = 0;
+            int high = x;
+
+            while (low <= high)
+            {
+                var partitionX = low + (high - low) / 2;
+                var partitionY = ((x + y + 1)/2) - partitionX;
+
+                var maxLeftX = (partitionX == 0) ? int.MinValue : num1[partitionX - 1];
+                var minRightX = (partitionX == x) ? int.MaxValue : num1[partitionX];
+
+                var maxLeftY = (partitionX == 0) ? int.MinValue : num2[partitionY - 1];
+                var minRightY = (partitionX == y) ? int.MaxValue : num1[partitionY];
+
+                if (maxLeftX <= minRightX && maxLeftY <= minRightY)
+                {
+                    if ((x + y) % 2 == 0)
+                    {
+                        return ((double)(Math.Max(maxLeftX, maxLeftY) + Math.Min(minRightX, minRightY))) / 2;
+                    }
+                    return (double)Math.Max(maxLeftX, maxLeftY);
+                }
+                else if (maxLeftX > maxLeftY)  // search in left
+                {
+                    high = partitionX - 1;
+                }
+                else  // search in right
+                {
+                    low = partitionX + 1;
+                }
+            }
+            return 0.0;
+        }
     }
 }
