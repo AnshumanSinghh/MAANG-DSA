@@ -249,9 +249,22 @@ namespace DataStructure
             ////Console.WriteLine(medianOfTwoSortedArrays.Median(n, m));
             //Console.WriteLine(medianOfTwoSortedArrays.Median_2(n, m));
 
-            DivideTwoIntegers divideTwoIntegers = new DivideTwoIntegers();
-            //Console.WriteLine(divideTwoIntegers.Divide(30, -5));
-            Console.WriteLine(divideTwoIntegers.Divide_2(30, -5));
+            //DivideTwoIntegers divideTwoIntegers = new DivideTwoIntegers();
+            ////Console.WriteLine(divideTwoIntegers.Divide(30, -5));
+            //Console.WriteLine(divideTwoIntegers.Divide_2(30, -5));
+
+            MatrixMultiplication matrixMultiplication = new MatrixMultiplication();
+            int[,] arrayA = { { 1, 1, 1, 1 },
+                        { 2, 2, 2, 2 },
+                        { 3, 3, 3, 3 },
+                        { 2, 2, 2, 2 } };
+
+            int[,] arrayB = { { 1, 1, 1, 1 },
+                        { 2, 2, 2, 2 },
+                        { 3, 3, 3, 3 },
+                        { 2, 2, 2, 2 } };
+            var result = matrixMultiplication.Multiply(arrayA, arrayB, 4);
+
             Console.ReadKey();
         }
     }
