@@ -253,17 +253,21 @@ namespace DataStructure
             ////Console.WriteLine(divideTwoIntegers.Divide(30, -5));
             //Console.WriteLine(divideTwoIntegers.Divide_2(30, -5));
 
-            MatrixMultiplication matrixMultiplication = new MatrixMultiplication();
-            int[,] arrayA = { { 1, 1, 1, 1 },
-                        { 2, 2, 2, 2 },
-                        { 3, 3, 3, 3 },
-                        { 2, 2, 2, 2 } };
+            //MatrixMultiplication matrixMultiplication = new MatrixMultiplication();
+            //int[,] arrayA = { { 1, 1, 1, 1 },
+            //            { 2, 2, 2, 2 },
+            //            { 3, 3, 3, 3 },
+            //            { 2, 2, 2, 2 } };
 
-            int[,] arrayB = { { 1, 1, 1, 1 },
-                        { 2, 2, 2, 2 },
-                        { 3, 3, 3, 3 },
-                        { 2, 2, 2, 2 } };
-            var result = matrixMultiplication.Multiply(arrayA, arrayB, 4);
+            //int[,] arrayB = { { 1, 1, 1, 1 },
+            //            { 2, 2, 2, 2 },
+            //            { 3, 3, 3, 3 },
+            //            { 2, 2, 2, 2 } };
+            //var result = matrixMultiplication.Multiply(arrayA, arrayB, 4);
+
+            NumberOfInversions numberOfInversions = new NumberOfInversions();
+            var numbers = new List<int> { 70, 50, 60, 10, 20, 30, 80, 15};
+            Console.WriteLine(numberOfInversions.GetNumberOfInversion(numbers, 0, numbers.Count - 1));
 
             Console.ReadKey();
         }
