@@ -18,7 +18,7 @@ namespace DataStructure.Assignment_9_CSharp
          * (using 2 for loops to multiply the matrix).
          * 
          * Intuition:
-         * We will divide the Square Matrix in two equal halves.
+         * We will divide the Square Matrix in 4 equal matrix of sze N/2.
          * Ex:- {       |
                 { 1, 1, | 1, 1 },
                 { 2, 2, | 2, 2 },
