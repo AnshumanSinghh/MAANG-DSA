@@ -62,7 +62,6 @@ namespace DataStructure.Assignment_9_CSharp
             else
             {
                 var split_idx = n / 2;
-                var temp = new int[split_idx];
 
                 // Result Matrix
                 int[,] C00 = new int[split_idx, split_idx];            
