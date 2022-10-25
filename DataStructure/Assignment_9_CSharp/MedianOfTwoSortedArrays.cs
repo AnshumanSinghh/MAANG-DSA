@@ -18,7 +18,7 @@ namespace DataStructure.Assignment_9_CSharp
          * So, in this approach we will update mid1 and mid2 values until we have reached medianIndex.
          * 
          * Time complexity: O( medianIndex). 
-         * Space complexity: O(1)
+         * Space complexity: O(1)  [as we are using pointers to store mid values instead of taking an array of length n + m.]
          */
         public double Median(List<int> num1, List<int> num2)
         {
@@ -76,16 +76,17 @@ namespace DataStructure.Assignment_9_CSharp
          * right side we have larger elements. Since 2 sorthed arrays are given we can achieve this by applying little maths.
          * Let's  leftArray = { -5, 3, 6, 12, 15}; x = 5;
          * and rightArray = { -12, -10, -6, -3, 4, 10}; y = 6;
-         * Now, divide booth array ion 2 parts such that leftArray_leftPart + rightArray_leftPart = leftArray_rightPart + rightArray_righttPart
+         * Now, divide booth array in 2 parts such that leftArray_leftPart + rightArray_leftPart = leftArray_rightPart + rightArray_righttPart
          * partitionX = 5/2 = 2;
-         * PartitionY = (5+6+1)/2 - partitionX = 6 - 2 = 4;
+         * PartitionY = (5+6+1)/2 - partitionX = 6 - 2 = 4;  [since, partitionX + partitionY = (x + y + 1) / 2. Here added 1 for
+         *                                                    hadnling odd length cases]
          * 
          *          ===== Overall Left =====          |       ====== Overall Right ======
          * leftArray_leftPart = -5, 3                 | leftArray_rightPart = 6, 12, 15
          * rightArray_leftPart = -12, -10, -6, -3     | rightArray_righttPart = 4, 10
          * Now observe:
          * All elements of 'leftArray_leftPart' < All elements of 'leftArray_rightPart'. [as leftArray was sorted]
-         * All elements of 'rightArray_leftPart' < All elements of 'rightArray_ightPart'. [as leftArray was sorted]
+         * All elements of 'rightArray_leftPart' < All elements of 'rightArray_rightPart'. [as rightArray was sorted]
          * 
          * Deciding whether our partition is the required partition or not:
          * If last element of 'leftArray_leftPart' <= first element of 'rightArray_rightPart'
@@ -107,14 +108,14 @@ namespace DataStructure.Assignment_9_CSharp
          * Getting mid1 will be same as getting median in case of ODD_number. In order to get mid2 suppose we have to merge
          * 'leftArray_rightPart' and 'rightArray_righttPart'. Then the first element of this merged array will be mid2. But why?
          * Bcz mid1 and mid2 will be always adjacent elements and since mid1 is the last elemnt of overall Left Part. So, it's 
-         * adjacent will be the first element of overall Right part. ow to decide the first elemnt of overall Right Part?
+         * adjacent will be the first element of overall Right part. How to decide the first element of overall Right Part?
          * Since both 'leftArray_rightPart' and 'rightArray_righttPart' are sorted so the Minimum of first element of both
          * arrays would be the first element of overall Right part.
          * Righ Part:
          * leftArray_rightPart = 6, 12, 15
          * rightArray_righttPart = 4, 10
          * Overall Right = Min(6, 4)
-         *              (------- mid1 ---------  + --------- mid2 -------------) / 2   [Average of mid1 and mid2]
+         *              (------- mid1 --------- + ---------- mid2 -------------) / 2   [Average of mid1 and mid2]
          * So, Median = Max(maxLeftX, maxLeftY) + Math.Min(minRightX, minRightY) / 2.
          * 
          * Deciding for left or right traversal:
