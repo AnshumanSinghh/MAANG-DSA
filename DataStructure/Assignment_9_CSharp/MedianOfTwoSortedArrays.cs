@@ -127,7 +127,7 @@ namespace DataStructure.Assignment_9_CSharp
          * 
          * There are few edge case as well here, any  of this leftArray_leftPart, rightArray_leftPart, leftArray_rightPart, 
          * rightArray_rightPart can have zero elements. Ex:- Elements of leftArray are greater than elments of rightArray 
-         * elements. We will handle this situation by giving -infinity or +infinity based on need. See line 149, 152, 155 & 156.
+         * elements. We will handle this situation by giving -infinity or +infinity based on need. See line 153, 156, 159 & 160.
          */
         public double Median_2(List<int> num1, List<int> num2)
         {
