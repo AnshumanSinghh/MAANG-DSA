@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using DataStructure.Assignment_8_CSharp;
 using DataStructure.Assignment_9_CSharp;
+using DataStructure.LinkedLists.SinglyLinkedList;
 
 namespace DataStructure
 {
@@ -265,9 +266,48 @@ namespace DataStructure
             //            { 2, 2, 2, 2 } };
             //var result = matrixMultiplication.Multiply(arrayA, arrayB, 4);
 
-            NumberOfInversions numberOfInversions = new NumberOfInversions();
-            var numbers = new List<int> { 70, 50, 60, 10, 20, 30, 80, 15};
-            Console.WriteLine(numberOfInversions.GetNumberOfInversion(numbers, 0, numbers.Count - 1));
+            //NumberOfInversions numberOfInversions = new NumberOfInversions();
+            //var numbers = new List<int> { 70, 50, 60, 10, 20, 30, 80, 15};
+            //Console.WriteLine(numberOfInversions.GetNumberOfInversion(numbers, 0, numbers.Count - 1));
+
+            /* SINGLY LINKED LIST */
+            var sList = new SinglyLinkedList();
+            /* Insertion at Begining */
+            //sList.Prepend(50);
+            //sList.Prepend(40);
+            //sList.Prepend(30);
+            //sList.Prepend(20);
+            //sList.Prepend(10);
+
+            /* Insertion at End */
+            sList.Append(50);
+            sList.Append(40);
+            //sList.Append(30);
+            //sList.Append(20);
+            //sList.Append(10);
+
+            /* Insert After given Node */
+            sList.InsertAfter(sList.First, 30);
+            sList.InsertAfter(sList.First, 20);
+            sList.InsertAfter(sList.First, 10);
+
+            /* Printing all elments */ 
+            sList.Peek();
+
+            /* Deletion at Begining */
+            //sList.DeleteAtBegining();
+            //sList.DeleteAtBegining();
+
+            /* Deletion at End */
+            //sList.Pop();
+            //sList.Pop();
+
+            /* Delete a given Node */
+            sList.Delete(sList.First.next.next);
+
+            Console.WriteLine("Linked List after deletion: ");
+            sList.Peek();
+
 
             Console.ReadKey();
         }

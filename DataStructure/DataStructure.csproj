@@ -70,6 +70,7 @@
     <Compile Include="BS_Q3.cs" />
     <Compile Include="Assignment5\FirstBadVersion.cs" />
     <Compile Include="DivideAndConquer\FindMinAndMaxInArray.cs" />
+    <Compile Include="LinkedLists\SinglyLinkedList\SinglyLinkedList.cs" />
     <Compile Include="MoveZeroes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
