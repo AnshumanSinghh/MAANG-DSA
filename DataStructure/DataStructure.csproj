@@ -63,6 +63,7 @@
     <Compile Include="Assignment_9_CSharp\MatrixMultiplication.cs" />
     <Compile Include="Assignment_9_CSharp\MedianOfTwoSortedArrays.cs" />
     <Compile Include="Assignment_9_CSharp\NumberOfInversions.cs" />
+    <Compile Include="Assignment_9_CSharp\StrassenMatrixMultiplication.cs" />
     <Compile Include="BestTimeToSellStock.cs" />
     <Compile Include="BinarySearch.cs" />
     <Compile Include="BS_Q1.cs" />

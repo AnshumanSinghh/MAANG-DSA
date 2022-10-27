@@ -255,23 +255,34 @@ namespace DataStructure
             //Console.WriteLine(divideTwoIntegers.Divide_2(30, -5));
 
             //MatrixMultiplication matrixMultiplication = new MatrixMultiplication();
-            //int[,] arrayA = { { 1, 1, 1, 1 },
-            //            { 2, 2, 2, 2 },
-            //            { 3, 3, 3, 3 },
-            //            { 2, 2, 2, 2 } };
+            StrassenMatrixMultiplication strassenMatrix = new StrassenMatrixMultiplication();
+            int[,] arrayA = { { 1, 1, 1, 1 },
+                        { 2, 2, 2, 2 },
+                        { 3, 3, 3, 3 },
+                        { 2, 2, 2, 2 } };
 
-            //int[,] arrayB = { { 1, 1, 1, 1 },
-            //            { 2, 2, 2, 2 },
-            //            { 3, 3, 3, 3 },
-            //            { 2, 2, 2, 2 } };
-            //var result = matrixMultiplication.Multiply(arrayA, arrayB, 4);
+            int[,] arrayB = { { 1, 1, 1, 1 },
+                        { 2, 2, 2, 2 },
+                        { 3, 3, 3, 3 },
+                        { 2, 2, 2, 2 } };
+            var n = arrayA.GetLength(0);
+            //var result = matrixMultiplication.Multiply(arrayA, arrayB, n);
+            var result = strassenMatrix.Strassen(arrayA, arrayB, n);
+            for (var row = 0; row < n; row++)
+            {
+                for (int col = 0; col < n; col++)  // no. of columns = (arrayA.Length / arrayA.GetLength(0))
+                {
+                    Console.Write(result[row, col] + ", ");
+                }
+                Console.WriteLine();
+            }
 
             //NumberOfInversions numberOfInversions = new NumberOfInversions();
             //var numbers = new List<int> { 70, 50, 60, 10, 20, 30, 80, 15};
             //Console.WriteLine(numberOfInversions.GetNumberOfInversion(numbers, 0, numbers.Count - 1));
 
             /* SINGLY LINKED LIST */
-            var sList = new SinglyLinkedList();
+            //var sList = new SinglyLinkedList();
             /* Insertion at Begining */
             //sList.Prepend(50);
             //sList.Prepend(40);
@@ -280,19 +291,19 @@ namespace DataStructure
             //sList.Prepend(10);
 
             /* Insertion at End */
-            sList.Append(50);
-            sList.Append(40);
+            //sList.Append(50);
+            //sList.Append(40);
             //sList.Append(30);
             //sList.Append(20);
             //sList.Append(10);
 
             /* Insert After given Node */
-            sList.InsertAfter(sList.First, 30);
-            sList.InsertAfter(sList.First, 20);
-            sList.InsertAfter(sList.First, 10);
+            //sList.InsertAfter(sList.First, 30);
+            //sList.InsertAfter(sList.First, 20);
+            //sList.InsertAfter(sList.First, 10);
 
-            /* Printing all elments */ 
-            sList.Peek();
+            /* Printing all elments */
+            //sList.Peek();
 
             /* Deletion at Begining */
             //sList.DeleteAtBegining();
@@ -303,10 +314,10 @@ namespace DataStructure
             //sList.Pop();
 
             /* Delete a given Node */
-            sList.Delete(sList.First.next.next);
+            //sList.Delete(sList.First.next.next);
 
-            Console.WriteLine("Linked List after deletion: ");
-            sList.Peek();
+            //Console.WriteLine("Linked List after deletion: ");
+            //sList.Peek();
 
 
             Console.ReadKey();
