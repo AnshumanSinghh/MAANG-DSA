@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using DataStructure.Assignment_8_CSharp;
 using DataStructure.Assignment_9_CSharp;
 using DataStructure.LinkedLists.SinglyLinkedList;
+using DataStructure.Assignment_10_CSharp;
 
 namespace DataStructure
 {
@@ -255,27 +256,27 @@ namespace DataStructure
             //Console.WriteLine(divideTwoIntegers.Divide_2(30, -5));
 
             //MatrixMultiplication matrixMultiplication = new MatrixMultiplication();
-            StrassenMatrixMultiplication strassenMatrix = new StrassenMatrixMultiplication();
-            int[,] arrayA = { { 1, 1, 1, 1 },
-                        { 2, 2, 2, 2 },
-                        { 3, 3, 3, 3 },
-                        { 2, 2, 2, 2 } };
+            //StrassenMatrixMultiplication strassenMatrix = new StrassenMatrixMultiplication();
+            //int[,] arrayA = { { 1, 1, 1, 1 },
+            //            { 2, 2, 2, 2 },
+            //            { 3, 3, 3, 3 },
+            //            { 2, 2, 2, 2 } };
 
-            int[,] arrayB = { { 1, 1, 1, 1 },
-                        { 2, 2, 2, 2 },
-                        { 3, 3, 3, 3 },
-                        { 2, 2, 2, 2 } };
-            var n = arrayA.GetLength(0);
-            //var result = matrixMultiplication.Multiply(arrayA, arrayB, n);
-            var result = strassenMatrix.Strassen(arrayA, arrayB, n);
-            for (var row = 0; row < n; row++)
-            {
-                for (int col = 0; col < n; col++)  // no. of columns = (arrayA.Length / arrayA.GetLength(0))
-                {
-                    Console.Write(result[row, col] + ", ");
-                }
-                Console.WriteLine();
-            }
+            //int[,] arrayB = { { 1, 1, 1, 1 },
+            //            { 2, 2, 2, 2 },
+            //            { 3, 3, 3, 3 },
+            //            { 2, 2, 2, 2 } };
+            //var n = arrayA.GetLength(0);
+            ////var result = matrixMultiplication.Multiply(arrayA, arrayB, n);
+            //var result = strassenMatrix.Strassen(arrayA, arrayB, n);
+            //for (var row = 0; row < n; row++)
+            //{
+            //    for (int col = 0; col < n; col++)  // no. of columns = (arrayA.Length / arrayA.GetLength(0))
+            //    {
+            //        Console.Write(result[row, col] + ", ");
+            //    }
+            //    Console.WriteLine();
+            //}
 
             //NumberOfInversions numberOfInversions = new NumberOfInversions();
             //var numbers = new List<int> { 70, 50, 60, 10, 20, 30, 80, 15};
@@ -319,6 +320,19 @@ namespace DataStructure
             //Console.WriteLine("Linked List after deletion: ");
             //sList.Peek();
 
+            /* ASSIGNMENT 10 */
+            //ReverseTheLinkedList reverseTheLinkedList = new ReverseTheLinkedList();
+            //var list = new List<int> { 10, 20, 30, 40, 50, 150, 250 };
+            //reverseTheLinkedList.Reverse(list);
+
+            DetectCycleInLinkedList linkedList = new DetectCycleInLinkedList();
+            linkedList.InsertAtEnd(10);
+            linkedList.InsertAtEnd(20);
+            linkedList.InsertAtEnd(30);
+            linkedList.InsertAtEnd(40);
+            linkedList.head.next.next.next = linkedList.head; // making last node to point first
+
+            Console.WriteLine(linkedList.CheckIfCycleExists_2());
 
             Console.ReadKey();
         }

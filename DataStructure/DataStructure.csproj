@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Assignment5\ComputeSquareRoot.cs" />
     <Compile Include="Assignment5\PerfectSquare.cs" />
+    <Compile Include="Assignment_10_CSharp\DetectCycleInLinkedList.cs" />
+    <Compile Include="Assignment_10_CSharp\ReverseTheLinkedList.cs" />
     <Compile Include="Assignment_6\BuildMinHeap.cs" />
     <Compile Include="Assignment_6\KMostFrequentWords.cs" />
     <Compile Include="Assignment_6\K_ClosestPoints.cs" />
