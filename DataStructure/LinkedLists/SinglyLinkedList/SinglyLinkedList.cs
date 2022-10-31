@@ -19,7 +19,7 @@ namespace DataStructure.LinkedLists.SinglyLinkedList
     }
     class SinglyLinkedList
     {
-        private Node head = null;
+        public Node head = null;
 
         /// <summary>
         /// Get the First element.
