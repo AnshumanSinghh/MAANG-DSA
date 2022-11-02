@@ -325,14 +325,47 @@ namespace DataStructure
             //var list = new List<int> { 10, 20, 30, 40, 50, 150, 250 };
             //reverseTheLinkedList.Reverse(list);
 
-            DetectCycleInLinkedList linkedList = new DetectCycleInLinkedList();
-            linkedList.InsertAtEnd(10);
-            linkedList.InsertAtEnd(20);
-            linkedList.InsertAtEnd(30);
-            linkedList.InsertAtEnd(40);
-            linkedList.head.next.next.next = linkedList.head; // making last node to point first
+            //DetectCycleInLinkedList linkedList = new DetectCycleInLinkedList();
+            //linkedList.InsertAtEnd(10);
+            //linkedList.InsertAtEnd(20);
+            //linkedList.InsertAtEnd(30);
+            //linkedList.InsertAtEnd(40);
+            //linkedList.head.next.next.next = linkedList.head; // making last node to point first
+            //Console.WriteLine(linkedList.CheckIfCycleExists());
+            //Console.WriteLine(linkedList.CheckIfCycleExists_2());
 
-            Console.WriteLine(linkedList.CheckIfCycleExists_2());
+            //CircularLinkedList circularLinkedList = new CircularLinkedList();
+            //circularLinkedList.Append(10);
+            //circularLinkedList.Append(20);
+            //circularLinkedList.Append(30);
+            //circularLinkedList.Append(40);
+            //circularLinkedList.Peek();
+            //circularLinkedList.Peek_2();
+
+            //PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
+            //palindromeLinkedList.Append(1);
+            //palindromeLinkedList.Append(2);
+            //palindromeLinkedList.Append(3);
+            //palindromeLinkedList.Append(4);
+            //palindromeLinkedList.Append(3);
+            //palindromeLinkedList.Append(2);
+            //palindromeLinkedList.Append(1);
+            //Console.WriteLine(palindromeLinkedList.IsPalindrome());
+
+            SortLinkedList sortLinkedList = new SortLinkedList();
+            sortLinkedList.Append(1);
+            sortLinkedList.Append(1);
+            sortLinkedList.Append(0);
+            sortLinkedList.Append(1);
+            sortLinkedList.Append(0);
+            sortLinkedList.Append(2);
+            sortLinkedList.Append(2);
+            sortLinkedList.Append(0);
+            sortLinkedList.Append(2);
+            sortLinkedList.Append(0);
+            sortLinkedList.Append(0);
+            sortLinkedList.Sort();
+            sortLinkedList.Print();
 
             Console.ReadKey();
         }
