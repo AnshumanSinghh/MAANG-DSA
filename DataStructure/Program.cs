@@ -342,30 +342,64 @@ namespace DataStructure
             //circularLinkedList.Peek();
             //circularLinkedList.Peek_2();
 
-            //PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
+            PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
             //palindromeLinkedList.Append(1);
             //palindromeLinkedList.Append(2);
             //palindromeLinkedList.Append(3);
             //palindromeLinkedList.Append(4);
+            //palindromeLinkedList.Append(5);
+            //palindromeLinkedList.Append(6);
+            //palindromeLinkedList.Append(5);
+            //palindromeLinkedList.Append(4);
             //palindromeLinkedList.Append(3);
             //palindromeLinkedList.Append(2);
             //palindromeLinkedList.Append(1);
-            //Console.WriteLine(palindromeLinkedList.IsPalindrome());
+            //var count = 0;
+            //Random random = new Random();
+            //while (count < 1000)
+            //{
+            //    //var data = random.Next(0, 10);
+            //    int data = 0;
+            //    if (count <  250)
+            //    {
+            //        data = 1;
+            //    }
+            //    else if (count > 740)
+            //    {
+            //        data = 1;
+            //    }
+            //    else
+            //    {
+            //        data = 0;
+            //    }
+            //    palindromeLinkedList.Append(data);
+            //    count++;
+            //}
+            //Console.WriteLine(palindromeLinkedList.IsPalindrome()); // completed
+            ////Console.WriteLine(palindromeLinkedList.IsPalindrome_2());  // incomplete
 
-            SortLinkedList sortLinkedList = new SortLinkedList();
-            sortLinkedList.Append(1);
-            sortLinkedList.Append(1);
-            sortLinkedList.Append(0);
-            sortLinkedList.Append(1);
-            sortLinkedList.Append(0);
-            sortLinkedList.Append(2);
-            sortLinkedList.Append(2);
-            sortLinkedList.Append(0);
-            sortLinkedList.Append(2);
-            sortLinkedList.Append(0);
-            sortLinkedList.Append(0);
-            sortLinkedList.Sort();
-            sortLinkedList.Print();
+            //SortLinkedList sortLinkedList = new SortLinkedList();
+            //sortLinkedList.Append(1);
+            //sortLinkedList.Append(1);
+            //sortLinkedList.Append(0);
+            //sortLinkedList.Append(1);
+            //sortLinkedList.Append(0);
+            //sortLinkedList.Append(2);
+            //sortLinkedList.Append(2);
+            //sortLinkedList.Append(0);
+            //sortLinkedList.Append(2);
+            //sortLinkedList.Append(0);
+            //sortLinkedList.Append(0);
+            //sortLinkedList.Sort();
+            //sortLinkedList.Print();
+
+            RemoveNthNodeFromLast removeNthNode = new RemoveNthNodeFromLast();
+            removeNthNode.Append(1);
+            removeNthNode.Append(2);
+            removeNthNode.Append(3);
+            removeNthNode.Append(4);
+            removeNthNode.Append(5);
+            removeNthNode.DeleteNthNodeFromLast(3);
 
             Console.ReadKey();
         }

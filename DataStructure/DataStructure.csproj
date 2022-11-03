@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,7 @@
     <Compile Include="Assignment_10_CSharp\CircularLinkedList.cs" />
     <Compile Include="Assignment_10_CSharp\DetectCycleInLinkedList.cs" />
     <Compile Include="Assignment_10_CSharp\PalindromeLinkedList.cs" />
+    <Compile Include="Assignment_10_CSharp\RemoveNthNodeFromLast.cs" />
     <Compile Include="Assignment_10_CSharp\ReverseTheLinkedList.cs" />
     <Compile Include="Assignment_10_CSharp\SortLinkedList.cs" />
     <Compile Include="Assignment_6\BuildMinHeap.cs" />
