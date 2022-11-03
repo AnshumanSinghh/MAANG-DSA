@@ -16,6 +16,11 @@ namespace DataStructure.LinkedLists.SinglyLinkedList
             data = d;
             next = null;
         }
+        public Node(int d = 0, Node next = null)
+        {
+            this.data = d;
+            this.next = next;
+        }
     }
     class SinglyLinkedList
     {
