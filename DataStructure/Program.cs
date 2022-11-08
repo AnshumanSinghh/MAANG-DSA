@@ -10,6 +10,7 @@ using DataStructure.Assignment_8_CSharp;
 using DataStructure.Assignment_9_CSharp;
 using DataStructure.LinkedLists.SinglyLinkedList;
 using DataStructure.Assignment_10_CSharp;
+using DataStructure.Assignment_11_CSharp;
 
 namespace DataStructure
 {
@@ -393,13 +394,24 @@ namespace DataStructure
             //sortLinkedList.Sort();
             //sortLinkedList.Print();
 
-            RemoveNthNodeFromLast removeNthNode = new RemoveNthNodeFromLast();
-            removeNthNode.Append(1);
-            removeNthNode.Append(2);
-            removeNthNode.Append(3);
-            removeNthNode.Append(4);
-            removeNthNode.Append(5);
-            removeNthNode.DeleteNthNodeFromLast(3);
+            //RemoveNthNodeFromLast removeNthNode = new RemoveNthNodeFromLast();
+            //removeNthNode.Append(1);
+            //removeNthNode.Append(2);
+            //removeNthNode.Append(3);
+            //removeNthNode.Append(4);
+            //removeNthNode.Append(5);
+            //removeNthNode.DeleteNthNodeFromLast(3);
+
+            /* ASSIGNMENT - 11 */
+            StackUsingQueue stackUsingQueue = new StackUsingQueue();
+            stackUsingQueue.Push(1);
+            stackUsingQueue.Push(2);
+            stackUsingQueue.Push(3);
+            stackUsingQueue.Push(4);
+            stackUsingQueue.Top();
+            stackUsingQueue.Pop();
+            stackUsingQueue.Pop();
+            stackUsingQueue.Empty();
 
             Console.ReadKey();
         }
