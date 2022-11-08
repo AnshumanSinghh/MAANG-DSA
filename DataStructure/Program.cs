@@ -403,15 +403,29 @@ namespace DataStructure
             //removeNthNode.DeleteNthNodeFromLast(3);
 
             /* ASSIGNMENT - 11 */
-            StackUsingQueue stackUsingQueue = new StackUsingQueue();
-            stackUsingQueue.Push(1);
-            stackUsingQueue.Push(2);
-            stackUsingQueue.Push(3);
-            stackUsingQueue.Push(4);
-            stackUsingQueue.Top();
-            stackUsingQueue.Pop();
-            stackUsingQueue.Pop();
-            stackUsingQueue.Empty();
+            //StackUsingQueue stackUsingQueue = new StackUsingQueue();
+            //stackUsingQueue.Push(1);
+            //stackUsingQueue.Push(2);
+            //stackUsingQueue.Push(3);
+            //stackUsingQueue.Push(4);
+            //stackUsingQueue.Top();
+            //stackUsingQueue.Pop();
+            //stackUsingQueue.Pop();
+            //stackUsingQueue.Empty();
+
+            QueueUsingStack queueUsingStack = new QueueUsingStack();
+            queueUsingStack.Enqueue(1);
+            queueUsingStack.Enqueue(2);
+            queueUsingStack.Enqueue(3);
+            queueUsingStack.Enqueue(4);
+            queueUsingStack.Enqueue(5);
+            var p1 = queueUsingStack.Peek();
+            queueUsingStack.Dequeue();
+            queueUsingStack.Dequeue();
+            queueUsingStack.Enqueue(10);
+            queueUsingStack.Dequeue();
+            queueUsingStack.Empty();
+            var p2 = queueUsingStack.Peek();
 
             Console.ReadKey();
         }

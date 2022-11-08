@@ -52,6 +52,7 @@
     <Compile Include="Assignment_10_CSharp\RemoveNthNodeFromLast.cs" />
     <Compile Include="Assignment_10_CSharp\ReverseTheLinkedList.cs" />
     <Compile Include="Assignment_10_CSharp\SortLinkedList.cs" />
+    <Compile Include="Assignment_11_CSharp\QueueUsingStack.cs" />
     <Compile Include="Assignment_11_CSharp\StackUsingQueue.cs" />
     <Compile Include="Assignment_6\BuildMinHeap.cs" />
     <Compile Include="Assignment_6\KMostFrequentWords.cs" />
