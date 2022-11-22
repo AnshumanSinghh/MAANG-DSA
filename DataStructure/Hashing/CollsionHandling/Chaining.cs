@@ -16,8 +16,8 @@ namespace DataStructure.Hashing.CollsionHandling
             return asciiSum % modulo;
         }
 
-        // Array<KV> ==> Array<List<KV>>
-        private List<KeyValuePair<int, string>>[] map = new List<KeyValuePair<int, string>>[10];
+        // Array<List<KV>>
+        public List<KeyValuePair<int, string>>[] map = new List<KeyValuePair<int, string>>[10];
 
         public string this[int key]
         {
@@ -27,6 +27,7 @@ namespace DataStructure.Hashing.CollsionHandling
 
         private string GetValueByKey(List<KeyValuePair<int, string>> keyValueList, int key)
         {
+            // if there is no key value for particular hash index then return null
             if (keyValueList == null)
             {
                 return null;
@@ -35,9 +36,11 @@ namespace DataStructure.Hashing.CollsionHandling
             {
                 if (kv.Key == key)
                 {
+                    Console.WriteLine($"Key: {kv.Key} and Value: {kv.Value}");
                     return kv.Value;
                 }
             }
+            // means, elements are there but that key is not there
             return null;
         }
 
@@ -68,9 +71,7 @@ namespace DataStructure.Hashing.CollsionHandling
 
         public string GetValue(int key)
         {
-            var value = GetValueByKey(map[Hash(key.ToString())], key);
-            Console.WriteLine($"Key: {key} and Value: {value}");
-            return value;
+            return GetValueByKey(map[Hash(key.ToString())], key); ;
         }
     }
 }

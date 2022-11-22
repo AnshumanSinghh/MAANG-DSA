@@ -447,8 +447,20 @@ namespace DataStructure
             chaining[110] = "110";
             chaining[101] = "101";
             chaining.Add(500, "500");
-            var c = chaining[110];
-            var d = chaining.GetValue(101);
+            //var c = chaining[110];
+            //var d = chaining.GetValue(101);
+            var count = 0;
+            foreach (var kvList in chaining.map)
+            {
+                if (kvList != null)
+                {
+                    foreach (var kv in kvList)
+                    {
+                        Console.WriteLine($"MapIndex: {count} ==> Key: {kv.Key} and Value: {kv.Value}");
+                    }
+                }
+                count++;
+            }
             Console.ReadKey();
         }
     }
