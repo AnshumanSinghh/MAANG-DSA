@@ -54,6 +54,10 @@
     <Compile Include="Assignment_10_CSharp\SortLinkedList.cs" />
     <Compile Include="Assignment_11_CSharp\QueueUsingStack.cs" />
     <Compile Include="Assignment_11_CSharp\StackUsingQueue.cs" />
+    <Compile Include="Assignment_12_CSharp\InOrder.cs" />
+    <Compile Include="Assignment_12_CSharp\Node.cs" />
+    <Compile Include="Assignment_12_CSharp\PostOrder.cs" />
+    <Compile Include="Assignment_12_CSharp\PreOrder.cs" />
     <Compile Include="Assignment_6\BuildMinHeap.cs" />
     <Compile Include="Assignment_6\KMostFrequentWords.cs" />
     <Compile Include="Assignment_6\K_ClosestPoints.cs" />
@@ -80,6 +84,8 @@
     <Compile Include="BS_Q3.cs" />
     <Compile Include="Assignment5\FirstBadVersion.cs" />
     <Compile Include="DivideAndConquer\FindMinAndMaxInArray.cs" />
+    <Compile Include="Hashing\AsciiSumHashing.cs" />
+    <Compile Include="Hashing\CollsionHandling\Chaining.cs" />
     <Compile Include="LinkedLists\SinglyLinkedList\SinglyLinkedList.cs" />
     <Compile Include="MoveZeroes.cs" />
     <Compile Include="Program.cs" />

@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructure
+namespace DataStructure.Hashing
 {
-    class Hashing
+    class AsciiSumHashing
     {
         private const int modulo = 10;
         private int Hash(string key)
@@ -21,7 +20,7 @@ namespace DataStructure
         public string this[int key]
         {
             get { return map[Hash(key.ToString())].Value; }
-            set { map[Hash(key.ToString())] = new KeyValuePair<int, string>( key, value); }
+            set { map[Hash(key.ToString())] = new KeyValuePair<int, string>(key, value); }
         }
 
         public void Add(int key, string value)

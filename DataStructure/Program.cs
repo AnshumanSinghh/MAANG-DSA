@@ -11,6 +11,8 @@ using DataStructure.Assignment_9_CSharp;
 using DataStructure.LinkedLists.SinglyLinkedList;
 using DataStructure.Assignment_10_CSharp;
 using DataStructure.Assignment_11_CSharp;
+using DataStructure.Hashing;
+using DataStructure.Hashing.CollsionHandling;
 
 namespace DataStructure
 {
@@ -413,20 +415,40 @@ namespace DataStructure
             //stackUsingQueue.Pop();
             //stackUsingQueue.Empty();
 
-            QueueUsingStack queueUsingStack = new QueueUsingStack();
-            queueUsingStack.Enqueue(1);
-            queueUsingStack.Enqueue(2);
-            queueUsingStack.Enqueue(3);
-            queueUsingStack.Enqueue(4);
-            queueUsingStack.Enqueue(5);
-            var p1 = queueUsingStack.Peek();
-            queueUsingStack.Dequeue();
-            queueUsingStack.Dequeue();
-            queueUsingStack.Enqueue(10);
-            queueUsingStack.Dequeue();
-            queueUsingStack.Empty();
-            var p2 = queueUsingStack.Peek();
+            //QueueUsingStack queueUsingStack = new QueueUsingStack();
+            //queueUsingStack.Enqueue(1);
+            //queueUsingStack.Enqueue(2);
+            //queueUsingStack.Enqueue(3);
+            //queueUsingStack.Enqueue(4);
+            //queueUsingStack.Enqueue(5);
+            //var p1 = queueUsingStack.Peek();
+            //queueUsingStack.Dequeue();
+            //queueUsingStack.Dequeue();
+            //queueUsingStack.Enqueue(10);
+            //queueUsingStack.Dequeue();
+            //queueUsingStack.Empty();
+            //var p2 = queueUsingStack.Peek();
 
+            //AsciiSumHashing hashing = new AsciiSumHashing();
+            //Dictionary<int, string> dict = new Dictionary<int, string>();
+            //dict[1] = "11";
+            //dict[2] = "22";
+            //dict[3] = "33";
+            //dict.Add(4, "44");
+            ////var idx = hashing.Hash("A");
+            //hashing[1] = "11";
+            //hashing[2] = "22";
+            //hashing[3] = "33";
+            //hashing.Add(4, "44");
+
+            Chaining chaining = new Chaining();
+            chaining[1] = "1";
+            chaining[2] = "2";
+            chaining[110] = "110";
+            chaining[101] = "101";
+            chaining.Add(500, "500");
+            var c = chaining[110];
+            var d = chaining.GetValue(101);
             Console.ReadKey();
         }
     }
